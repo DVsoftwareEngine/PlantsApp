@@ -9,9 +9,8 @@
 <style>
 	.Home {
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
+    height: 100%;
 	}
 
 	h1 {
@@ -19,5 +18,6 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+    margin: 0;
 	}
 </style>
