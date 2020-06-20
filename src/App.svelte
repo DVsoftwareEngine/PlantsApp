@@ -34,6 +34,19 @@
     height: var(--pageHeight);
   }
 
+  #pageContent {
+    height: 90%;
+  }
+
+  .navbar {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top: 1px solid black;
+  }
+
 </style>
 
 <svelte:window on:popstate={handlerBackNavigation} />
@@ -41,7 +54,13 @@
 <div class="app">
   <div id="pageContent"><!-- Page component updates here --><svelte:component this={router[$curRoute]} /></div>
 
-  <RouterLink page={{path: '/home', name: 'Home'}} />
+  <nav class="navbar">
+    <RouterLink page={{path: '/', name: 'Home'}} />
 
-  <RouterLink page={{path: '/profile', name: 'Profle'}} />
+    <RouterLink page={{path: '/calendar', name: 'Calendar'}} />
+
+    <RouterLink page={{path: '/shop', name: 'Shop'}} />
+
+    <RouterLink page={{path: '/profile', name: 'Profle'}} />
+  </nav>
 </div>

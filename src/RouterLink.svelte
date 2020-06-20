@@ -15,8 +15,8 @@ function redirectTo(event){
 <style>
 a {
   text-transform: uppercase;
-  text-decoration: underline;
   padding: 1rem;
+  color: black;
 }
 </style>
 
