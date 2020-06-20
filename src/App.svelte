@@ -24,7 +24,7 @@
 
 <style>
   :root {
-    --pageHeight: 80px;
+    --pageHeight: 0px;
   }
 
   .app {
@@ -35,7 +35,7 @@
   }
 
   #pageContent {
-    height: 90%;
+    height: 85%;
   }
 
   .navbar {
@@ -43,8 +43,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     border-top: 1px solid black;
+  }
+
+  .header{
+    height: 5%;
+    text-align: center;
+    margin: auto;
+  }
+  .header>h1{
+    margin: auto;
   }
 
 </style>
@@ -52,6 +60,8 @@
 <svelte:window on:popstate={handlerBackNavigation} />
 
 <div class="app">
+  <header class="header"><h1>PlantsApp</h1></header>
+
   <div id="pageContent"><!-- Page component updates here --><svelte:component this={router[$curRoute]} /></div>
 
   <nav class="navbar">
