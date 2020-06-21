@@ -2,13 +2,13 @@
 	
 </script>
 
-<div class="AIcard">
+<div class="AICard">
 	<h3>Winter is comming</h3>
   <p>Dont forget to check last day of fertilizetion</p>
 </div>
 
 <style>
-	.AIcard {
+	.AICard {
     background-color: khaki;
     width: 80%;
     border-radius: 30px;
