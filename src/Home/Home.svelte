@@ -1,9 +1,11 @@
 <script>
   import AICard from "./components/AI-card.svelte";
+  import PlantCard from "./components/Plant-card.svelte";
 </script>
 
 <div class="Home">
 	<AICard/>
+  <PlantCard/>
 </div>
 
 <style>
@@ -16,11 +18,4 @@
     padding-top: 5%;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-    margin: 0;
-	}
 </style>

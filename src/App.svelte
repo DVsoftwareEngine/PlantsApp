@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     height: var(--pageHeight);
+    background-color: rgb(243, 243, 243);
   }
 
   #pageContent {
@@ -42,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
+    background-color: #fff;
   }
 
   .header{
