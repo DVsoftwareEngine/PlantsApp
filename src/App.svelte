@@ -30,7 +30,6 @@
   .app {
     display: flex;
     flex-direction: column;
-    background-color:blanchedalmond;
     height: var(--pageHeight);
   }
 
@@ -49,7 +48,6 @@
   .header{
     height: 5%;
     text-align: center;
-    margin: auto;
   }
   .header>h1{
     margin: auto;

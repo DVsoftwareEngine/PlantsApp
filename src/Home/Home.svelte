@@ -1,16 +1,19 @@
 <script>
-	
+  import AICard from "./components/AI-card.svelte";
 </script>
 
 <div class="Home">
-	<h1>It's our Home!!!</h1>
+	<AICard/>
 </div>
 
 <style>
 	.Home {
-		text-align: center;
 		margin: 0 auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
 	}
 
 	h1 {
