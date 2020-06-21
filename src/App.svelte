@@ -13,29 +13,23 @@
   }
   document.body.style.overflow = "hidden"
 
-  //Получаем высоту браузерного окна для дальнейшего присваивания ее высоте блоков
-  let pageHeight = document.documentElement.clientHeight;
-  //Получаем доступ к переменным css
-  var root = document.querySelector(':root');
-  //Присваеваем переменной --pageHeight значение высоты браузерного окна, все блоки главной страницы будут ее испотзовать
-  root.style.setProperty('--pageHeight', pageHeight+"px");
-
 </script>
 
 <style>
   :root {
-    --pageHeight: 0px;
+
   }
 
   .app {
     display: flex;
     flex-direction: column;
-    height: var(--pageHeight);
+    height: 100vh;
     background-color: rgb(243, 243, 243);
   }
 
   #pageContent {
     height: 85%;
+    overflow: scroll;
   }
 
   .navbar {

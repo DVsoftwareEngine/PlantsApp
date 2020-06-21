@@ -6,14 +6,36 @@
   export let plantName;
 </script>
 
-<div class="Plant" id={plantName} on:click={toTop}>
-	<a>UP</a>
+<div class="Plant" id={plantName}>
+  <div class="topButton" on:click={toTop}>
+    <span class="arrow arrow-top-wide"></span>
+  </div>
   <h1>{plantName}</h1>
+  <!-- <img class="PlantImage" src="images/mat-reding-WPZlpwJx0Lk-unsplash.jpg" alt=""> -->
 </div>
 
 <style>
 	.Plant {
-    background-color:rgb(148, 179, 86);
-    height: var(--pageHeight);
+    height: 100vh;
+  }
+
+  /* .PlantImage {
+    height: 100vh;
+    width: 100vw;
+  } */
+
+  .topButton {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+  .arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg) skew(15deg, 15deg);
   }
 </style>
