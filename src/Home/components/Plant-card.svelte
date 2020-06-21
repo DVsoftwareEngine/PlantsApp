@@ -1,8 +1,10 @@
 <script>
-	
+  function toPlant() {
+    document.querySelector('#Cactus').scrollIntoView();
+  }
 </script>
 
-<div class="PlantCard">
+<div class="PlantCard" on:click={toPlant}>
 	<h3>Cactus</h3>
   <p>Yep, cactus</p>
 </div>

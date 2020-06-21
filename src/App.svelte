@@ -2,6 +2,7 @@
   import router, { curRoute } from './router.js';
   import RouterLink from './RouterLink.svelte';
   import { onMount } from 'svelte';
+  import Plants from "./Home/components/Plants.svelte";
 
   onMount(() => {  curRoute.set(window.location.pathname);  
   if (!history.state) {
@@ -10,8 +11,7 @@
   function handlerBackNavigation(event){  
     curRoute.set(event.state.path)
   }
-  //Убрали паддинг у body
-  document.body.style.padding = 0;
+  document.body.style.overflow = "hidden"
 
   //Получаем высоту браузерного окна для дальнейшего присваивания ее высоте блоков
   let pageHeight = document.documentElement.clientHeight;
@@ -54,6 +54,14 @@
     margin: auto;
   }
 
+  :global(body) {
+		padding: 0;
+	}
+
+  :global(html) {
+		scroll-behavior: smooth;
+	}
+
 </style>
 
 <svelte:window on:popstate={handlerBackNavigation} />
@@ -72,4 +80,7 @@
 
     <RouterLink page={{path: '/profile', name: 'Profle'}} />
   </nav>
+
 </div>
+
+<Plants/>
