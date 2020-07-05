@@ -1,12 +1,14 @@
 <script>
   function toPlant() {
-    document.querySelector('#Cactus').scrollIntoView();
+    document.querySelector('#'+plantName).scrollIntoView();
   }
+
+  export let plantName;
 </script>
 
 <div class="PlantCard" on:click={toPlant}>
-	<h3>Cactus</h3>
-  <p>Yep, cactus</p>
+	<h3>{plantName}</h3>
+  <p>Yep, {plantName}</p>
 </div>
 
 <style>

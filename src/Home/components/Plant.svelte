@@ -10,8 +10,8 @@
   <div class="topButton" on:click={toTop}>
     <span class="arrow arrow-top-wide"></span>
   </div>
-  <h1>{plantName}</h1>
-  <!-- <img class="PlantImage" src="images/mat-reding-WPZlpwJx0Lk-unsplash.jpg" alt=""> -->
+  <!-- <h1>{plantName}</h1> -->
+  <img class="PlantImage" src="images/cactus.jpg" alt=""/>
 </div>
 
 <style>
@@ -19,10 +19,10 @@
     height: 100vh;
   }
 
-  /* .PlantImage {
-    height: 100vh;
+  .PlantImage {
+    object-fit: cover;
     width: 100vw;
-  } */
+  }
 
   .topButton {
     text-align: center;

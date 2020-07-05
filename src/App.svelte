@@ -16,9 +16,9 @@
 </script>
 
 <style>
-  :root {
+  /* :root {
 
-  }
+  } */
 
   .app {
     display: flex;
