@@ -14,6 +14,11 @@
   <img class="PlantImage" src="images/{plantName}Image.jpg" alt="{plantName}"/>
   <div class="PlantAbout">
     <h1>{nickname}</h1>
+    <div class="PlantAbout-buttons">
+      <input type="image" src="images/water.png" alt="Watering"/>
+      <input type="image" src="images/Fertilizer.png" alt="Fertilizer"/>
+      <input type="image" src="images/Shovel.png" alt="Shovel"/>
+    </div>
   </div>
 </div>
 
@@ -43,4 +48,25 @@
     border-right: 2px solid #000;
     transform: rotate(-45deg) skew(15deg, 15deg);
   }
+
+  .PlantAbout {
+    padding: 15px;
+  }
+
+  .PlantAbout h1 {
+    margin-top: 0;
+  }
+
+  .PlantAbout-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .PlantAbout-buttons input {
+    border: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+
 </style>
