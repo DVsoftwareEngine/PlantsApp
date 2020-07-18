@@ -2,22 +2,21 @@
   import AICard from "./components/AI-card.svelte";
   import PlantCard from "./components/Plant-card.svelte";
   import NewPlantCard from "./components/NewPlant-card.svelte";
-  import { plants } from "../../../State/State.svelte"
+  import PlantsStore from "../Store/PlantsStore"
 
-  const unsubscribe = plants.subscribe(value => {
-		count_value = value;
+  let PlantsArr = [];
+
+  PlantsStore.subscribe(updatedData => {
+		PlantsArr = updatedData;
   });
-  
-  onDestroy(unsubscribe);
 
 </script>
 
 <div class="Home">
   <AICard/>
-  <PlantCard plantName="Cactus"/>
-  <!-- { #each $plants as plant }
+  { #each PlantsArr as plant }
     <PlantCard plantName="{plant.plantName}"/>
-  { /each } -->
+  { /each }
   <NewPlantCard/>
 </div>
 

@@ -1,9 +1,12 @@
 <script>
+import Plant from "./Plant.svelte";
+
+
+  export let plantName;
+
   function toPlant() {
     document.querySelector('#'+plantName).scrollIntoView();
   }
-
-  export let plantName;
 </script>
 
 <div class="PlantCard" on:click={toPlant}>

@@ -16,9 +16,6 @@
 </script>
 
 <style>
-  /* :root {
-
-  } */
 
   .app {
     display: flex;

@@ -22,6 +22,8 @@
   .PlantImage {
     object-fit: cover;
     width: 100vw;
+    height: 50%;
+
   }
 
   .topButton {

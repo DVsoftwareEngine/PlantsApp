@@ -1,13 +1,19 @@
 <script>
   import Plant from "./Plant.svelte";
-  import Plants from "../../State/State.svelte"
+  import PlantsStore from "../../Store/PlantsStore"
+
+  let PlantsArr = [];
+
+  PlantsStore.subscribe(updatedData => {
+		PlantsArr = updatedData;
+  });
 </script>
 
 <div class="Plants">
 
-  <!-- { #each $Plants as plant }
+  { #each PlantsArr as plant }
     <Plant plantName={plant.plantName}/>
-  { /each } -->
+  { /each }
 
 </div>
 
