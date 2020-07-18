@@ -4,14 +4,17 @@
   }
 
   export let plantName;
+  export let nickname
 </script>
 
 <div class="Plant" id={plantName}>
   <div class="topButton" on:click={toTop}>
     <span class="arrow arrow-top-wide"></span>
   </div>
-  <!-- <h1>{plantName}</h1> -->
-  <img class="PlantImage" src="images/cactus.jpg" alt=""/>
+  <img class="PlantImage" src="images/{plantName}Image.jpg" alt="{plantName}"/>
+  <div class="PlantAbout">
+    <h1>{nickname}</h1>
+  </div>
 </div>
 
 <style>
@@ -28,7 +31,7 @@
 
   .topButton {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
 

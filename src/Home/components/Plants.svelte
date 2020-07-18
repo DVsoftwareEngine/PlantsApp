@@ -1,4 +1,5 @@
 <script>
+
   import Plant from "./Plant.svelte";
   import PlantsStore from "../../Store/PlantsStore"
 
@@ -12,7 +13,7 @@
 <div class="Plants">
 
   { #each PlantsArr as plant }
-    <Plant plantName={plant.plantName}/>
+    <Plant plantName={plant.plantName} nickname={plant.nickname}/>
   { /each }
 
 </div>

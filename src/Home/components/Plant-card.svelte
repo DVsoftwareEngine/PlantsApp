@@ -1,7 +1,4 @@
 <script>
-import Plant from "./Plant.svelte";
-
-
   export let plantName;
 
   function toPlant() {
@@ -10,8 +7,13 @@ import Plant from "./Plant.svelte";
 </script>
 
 <div class="PlantCard" on:click={toPlant}>
-	<h3>{plantName}</h3>
-  <p>Yep, {plantName}</p>
+  <div class="PlantCard-name">
+    <h3>{plantName}</h3>
+    <p>Yep, {plantName}</p>
+  </div>
+  <div class="PlantCard-logo">
+    <img src="images/{plantName}Logo.png" alt="{plantName}">
+  </div>
 </div>
 
 <style>
@@ -21,5 +23,19 @@ import Plant from "./Plant.svelte";
     border-radius: 30px;
     padding: 10px;
     margin-bottom: 2.5%;
+    display: flex;
   }
+
+  .PlantCard-name {
+    flex-grow: 10;
+  }
+
+  .PlantCard-logo {
+    width: 100px;
+  }
+
+  .PlantCard-logo img {
+    height: 100px;
+  }
+
 </style>

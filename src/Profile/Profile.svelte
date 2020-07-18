@@ -3,7 +3,8 @@
 </script>
 
 <div class="Home">
-	<h1>Just profile :c</h1>
+  <h1>Just profile :c</h1>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div>
 
 <style>
