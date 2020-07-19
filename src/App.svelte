@@ -17,6 +17,9 @@
 
   smoothscroll.polyfill();
 
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 </script>
 
 <style>
@@ -25,6 +28,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: rgb(243, 243, 243);
   }
 
