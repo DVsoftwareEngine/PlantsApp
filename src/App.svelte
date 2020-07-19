@@ -48,6 +48,7 @@
   .header{
     height: 5%;
     text-align: center;
+    margin: 10px 0;
   }
   .header>h1{
     margin: auto;
