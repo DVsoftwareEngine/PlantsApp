@@ -4,6 +4,8 @@
   import { onMount } from 'svelte';
   import Plants from "./Home/components/Plants.svelte";
 
+  import smoothscroll from 'smoothscroll-polyfill';
+
   onMount(() => {  curRoute.set(window.location.pathname);  
   if (!history.state) {
     window.history.replaceState({path: window.location.pathname}, '',   window.location.href)  
@@ -12,6 +14,8 @@
     curRoute.set(event.state.path)
   }
   document.body.style.overflow = "hidden"
+
+  smoothscroll.polyfill();
 
 </script>
 

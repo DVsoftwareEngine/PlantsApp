@@ -34,7 +34,7 @@
   <div class="PlantAbout">
     <h1>{nickname}</h1>
     <div class="PlantAbout-buttons">
-      <input type="image" src="images/water.png" alt="Water" on:click={setDateOfWatering}/>
+      <input type="image" src="images/Water.png" alt="Water" on:click={setDateOfWatering}/>
       <input type="image" src="images/Fertilizer.png" alt="Fertilizer" on:click={setDateOfFertilizetion}/>
       <input type="image" src="images/Shovel.png" alt="Shovel" on:click={setDateOfPotting}/>
     </div>

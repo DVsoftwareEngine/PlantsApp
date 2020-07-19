@@ -14,7 +14,7 @@
 
 <style>
 	.AICard {
-    background-color: #cafcf6;
+    background-color: #dbfffb;
     width: 80%;
     border-radius: 30px;
     padding: 10px; 
